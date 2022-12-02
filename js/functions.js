@@ -17,5 +17,5 @@ function divide (a, b) {
 }
 
 export default function allClear () {
-    displayCalc.textConten = 0;
+    displayCalc.textContent = '';
 }

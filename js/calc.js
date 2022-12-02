@@ -120,7 +120,7 @@ btnsDiv.childNodes.forEach((item) => {
     item.addEventListener('click', (event) => {
         displayCalc.textContent =  event.currentTarget.textContent
 
-        if (event.currentTarget.textContent = btnsDiv.childNodes[0].textContent = 'AC') {
+        if (event.currentTarget == btnsDiv.childNodes[0]) {
             return allClear();
         }
         
