@@ -114,11 +114,15 @@ btnsDiv.childNodes[15].textContent = '0';
 console.log(displayCalc.textContent)
 
 //События 
-let actions = ['+', '-', '*', '/', '%', '='];
+let actions = ['+', '-', '*', '/', '%', '=', 'AC'];
 
 btnsDiv.childNodes.forEach((item) => {
     item.addEventListener('click', (event) => {
         displayCalc.textContent =  event.currentTarget.textContent
-    })
-})
 
+        if (event.currentTarget.textContent = btnsDiv.childNodes[0].textContent = 'AC') {
+            return allClear();
+        }
+        
+    })
+});
