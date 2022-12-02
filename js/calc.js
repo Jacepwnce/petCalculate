@@ -104,4 +104,15 @@ btnsDiv.childNodes[11].textContent = '6';
 btnsDiv.childNodes[12].textContent = '1';
 btnsDiv.childNodes[13].textContent = '2';
 btnsDiv.childNodes[14].textContent = '3';
+btnsDiv.childNodes[15].textContent = '0';
 // replacment textContent in btn
+
+console.log(displayCalc.textContent)
+
+//События 
+
+btnsDiv.childNodes.forEach((item) => {
+    item.addEventListener('click', (event) => {
+        displayCalc.textContent =  event.currentTarget.textContent
+    })
+})
