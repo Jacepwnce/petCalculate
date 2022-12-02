@@ -1,9 +1,13 @@
+// imports
+import allClear from './functions.js'
+
 // varibales and creatind Elements 
 let body = document.querySelector('body');
 let calc = document.createElement('div');
 let displayCalc = document.createElement('p');
 let btnsDiv = document.createElement('div');
-
+// exports
+export default displayCalc
 
 
 //creating btns
@@ -110,9 +114,11 @@ btnsDiv.childNodes[15].textContent = '0';
 console.log(displayCalc.textContent)
 
 //События 
+let actions = ['+', '-', '*', '/', '%', '='];
 
 btnsDiv.childNodes.forEach((item) => {
     item.addEventListener('click', (event) => {
         displayCalc.textContent =  event.currentTarget.textContent
     })
 })
+
